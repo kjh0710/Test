@@ -7,25 +7,40 @@
     android:background="#FFFFFF"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView10"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:gravity="center"
-        android:text="상단바"
-        android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
 
-    <TextView
-        android:id="@+id/textView8"
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="상단바"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/goto_Mypage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:text="마이페이지" />
+
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/videoview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="10dp"
         android:layout_weight="8"
-        android:gravity="center"
-        android:text="15초영상"
-        android:textColor="#BC1A1A"
-        android:textSize="30sp" />
+        android:background="@android:color/black"
+        android:backgroundTint="@android:color/black"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/textView9"

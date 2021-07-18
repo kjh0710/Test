@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.test">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -23,6 +24,7 @@
         <activity android:name=".Signup"/>
         <activity android:name=".Login"/>
         <activity android:name=".Main"/>
+        <activity android:name=".Mypage"/>
     </application>
 
 </manifest>

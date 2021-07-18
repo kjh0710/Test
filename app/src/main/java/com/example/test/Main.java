@@ -19,6 +19,7 @@ public class Main extends AppCompatActivity {
             startLoginActivity();
         }
         findViewById(R.id.logout_button).setOnClickListener(onClickListener);
+        findViewById(R.id.goto_Mypage).setOnClickListener(onClickListener);
 
     }
 
@@ -29,6 +30,9 @@ public class Main extends AppCompatActivity {
                  case R.id.logout_button:
                      FirebaseAuth.getInstance().signOut();
                      startLoginActivity();
+                     break;
+                 case R.id.goto_Mypage:
+                     startMypageActivity();
                      break;
              }
         }
@@ -41,5 +45,15 @@ public class Main extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    private void startMypageActivity(){
+        Intent intent = new Intent(this, Mypage.class);
+        startActivity(intent);
+
+    }
+
+
+
+
 
 }
