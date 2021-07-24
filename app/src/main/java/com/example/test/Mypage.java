@@ -15,9 +15,27 @@ public class Mypage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mypage);
 
+        findViewById(R.id.logout_button).setOnClickListener(onClickListener);
 
     }
 
+    View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.logout_button:
+                    FirebaseAuth.getInstance().signOut();
+                    startLoginActivity();
+                    break;
+            }
+        }
+    };
 
 
+    private void startLoginActivity(){
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+
+    }
 }
+

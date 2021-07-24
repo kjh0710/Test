@@ -7,6 +7,12 @@
     android:background="#FFFFFF"
     android:orientation="vertical" >
 
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그아웃" />
+
     <ImageView
         android:id="@+id/myprofile"
         android:layout_width="match_parent"
@@ -19,33 +25,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="내 이메일" />
+        android:hint="내 이메일"
+        android:textColor="#090909" />
 
     <TextView
         android:id="@+id/textSub"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="내 구독자수" />
+        android:hint="내 구독자수"
+        android:textColor="#050505" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="동영상 선택하기" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="3"
-        app:srcCompat="@drawable/logo" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="영상업로드하기" />
 </LinearLayout>
